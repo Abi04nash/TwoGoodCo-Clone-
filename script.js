@@ -127,3 +127,20 @@ function locomotiveAnimation() {
     });
   }
   cursorAnimation();
+
+  function toggleMode() {
+    document.body.classList.toggle("dark");
+  
+    const btn = document.getElementById("themeToggle");
+    if (document.body.classList.contains("dark")) {
+      btn.textContent = "🌞 Light Mode";
+      cursor.style.backgroundColor = "white"; 
+      icons.style.backgroundColor = "black"; 
+      
+    } else {
+      btn.textContent = "🌙 Dark Mode";
+      cursor.style.backgroundColor = "rgba(199, 69, 199, 0.814)"; 
+      icons.style.backgroundColor = "white"; 
+
+    }
+  }  
